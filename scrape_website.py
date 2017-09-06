@@ -21,7 +21,6 @@ v =re.findall(r'\d+', ingress)
 e = float(v[0])
 final = math.ceil(e/100)
 
-
 for i in range(0, int(final)):
     time.sleep(5+random.random()*10)
     html = requests.get(url + str(i)).text
